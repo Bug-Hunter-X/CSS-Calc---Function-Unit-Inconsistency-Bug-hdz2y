@@ -1,0 +1,11 @@
+The corrected CSS code snippet addresses the unit inconsistency within the `calc()` function:
+
+```css
+.element {
+  width: calc(100% - 10px);
+  height: calc(50% - 5px); /*Corrected*/
+  background-color: lightblue;
+}
+```
+
+This version explicitly includes the `px` unit for the numerical values, ensuring consistent unit handling across different browsers and avoiding potential errors.  This ensures that the calculation is performed correctly and produces expected results.
