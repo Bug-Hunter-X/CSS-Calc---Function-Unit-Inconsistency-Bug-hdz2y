@@ -1,0 +1,11 @@
+The following CSS code snippet demonstrates an uncommon error related to the `calc()` function:
+
+```css
+.element {
+  width: calc(100% - 10px);
+  height: calc(50% - 5px);
+  background-color: lightblue;
+}
+```
+
+This code intends to set the width and height of an element dynamically based on its container. However, a potential issue arises if the `calc()` function attempts to subtract a unitless number from a percentage value.  Some browsers may handle this inconsistently, resulting in unexpected behavior or errors. The solution is to ensure consistent units within the `calc()` function.
